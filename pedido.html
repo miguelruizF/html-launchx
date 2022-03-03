@@ -26,17 +26,62 @@
             <label for="telefono">Escribe tu telefono: </label>
             <input id="telefono" name="telefono" placeholder="Telefono" type="tel">
         </div>
+        <br>
         <div>
-            <label for="pastel">Elige tu pastel: </label>
-            <select name="pastel" id="pastel">
-                <option value="" disabled selected>--Seleccionar--</option>
-                <option value="fresa">Pastel de Fresa</option>
-                <option value="chocolate">Pastel de Chocolate</option>
-                <option value="napolitano">Pastel de Napolitano</option>
-                <option value="moras">Pastel de Moras</option>
-                <option value="moka">Pastel de Moka</option>
-            </select>
+            <p>Selecciona como quieres tu pastel:</p>
+            <div>
+                <input type="radio" name="pastel" id="solo" value="solo">
+                <label for="solo">Pastel Solo</label>
+
+                <input type="radio" name="pastel" id="combinado" value="combinado">
+                <label for="combinado">Pastel Combinado</label>
+            </div>
         </div>
+        <br>
+        <section>
+            <div>
+                <label for="pastel">Elige el sabor: </label>
+                <select name="pastel" id="pastel">
+                    <option value="" disabled selected>--Seleccionar--</option>
+                    <option value="fresa">Pastel de Fresa</option>
+                    <option value="chocolate">Pastel de Chocolate</option>
+                    <option value="napolitano">Pastel de Napolitano</option>
+                    <option value="moras">Pastel de Moras</option>
+                    <option value="moka">Pastel de Moka</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="pastel">Elige el sabor: </label>
+                <select name="pastel" id="pastel">
+                    <option value="" disabled selected>--Seleccionar--</option>
+                    <option value="fresa">Pastel de Fresa</option>
+                    <option value="chocolate">Pastel de Chocolate</option>
+                    <option value="napolitano">Pastel de Napolitano</option>
+                    <option value="moras">Pastel de Moras</option>
+                    <option value="moka">Pastel de Moka</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <p>Selecciona los adornos:</p>
+            <div>
+                <input type="radio" name="adorno" id="velas" value="velas">
+                <label for="velas ">Velas de Colores</label>
+            </div>
+            <div>
+                <input type="radio" name="adorno" id="monos" value="moños">
+                <label for="monos">Moños de Colores</label>
+            </div>
+            <div>
+                <input type="radio" name="adorno" id="tarjeta" value="tarjeta">
+                <label for="tarjeta">Tarjeta de Felicitacion</label>
+            </div>
+        </section>
+
+        <p>Otras caracteristicas para tu pastel:</p>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
 
     </form>
 </body>
