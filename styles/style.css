@@ -1,0 +1,96 @@
+/*FUENTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&display=swap');
+
+/*CUSTOM PROPERTIES*/
+
+:root {
+    --titulos: 'Dancing Script', cursive;
+    --parrafos: 'Cormorant Garamond', serif;
+    --t-titulos: 4rem;
+    --t-subtitulos: 3.5rem;
+    --t-parrafos: 2rem;
+    --bold: 700;
+    --medium: 500;
+    --regular: 300;
+    --light: 200;
+}
+
+
+/*RESET*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--parrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*GLOBALES*/
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    max-width: 120rem;
+    /** = 1200px; **/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: var(--t-titulos);
+}
+
+h2 {
+    font-size: var(--t-subtitulos);
+}
+
+p {
+    font-size: var(--t-parrafos);
+    font-family: var(--parrafos);
+}
+
+
+/*HEADER*/
+
+.contenido_contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contenedor_logo>img {
+    width: 15rem;
+}
+
+.navegacion>ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacion ul li a {
+    justify-content: space-around;
+    padding: 0 2rem;
+    text-decoration: none;
+    font-size: var(--t-parrafos);
+}
+
+.navegacion ul li a:last-of-type {
+    padding-right: 0;
+}
