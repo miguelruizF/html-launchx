@@ -39,7 +39,7 @@
     /*GLOBALES*/
     
     img {
-        min-width: 100%;
+        width: 100%;
     }
     
     .container {
@@ -175,6 +175,8 @@
     
     .description {
         visibility: hidden;
+        display: flex;
+        flex-direction: column;
     }
     
     .cake:hover {
@@ -217,8 +219,36 @@
         color: #000;
         font-weight: 900;
     }
+    /* .add>span:hover {
+        color: #fff;
+    } */
     
-    .add>span:hover {
-        color: var(--color-subtitle);
+    .add {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .add:hover {
+        border: 1px solid #000;
+        padding: .5rem 1rem;
+        transition: .2s all ease-in-out;
+    }
+    
+    .letters>i {
+        color: #000;
+        font-size: var(--t-parrafos);
+        text-align: center;
     }
     /* SECTION EXTRAS*/
+    
+    .div_extras {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .extra {
+        width: 250px;
+        height: 350px;
+    }
